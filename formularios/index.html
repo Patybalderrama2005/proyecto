@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary m-2"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Insertar
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Formulario</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <input required id="folio"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Folio Comipens"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="aciertos"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Aciertos"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <div class="input-group">
+              <input required id="carrera"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Carrera"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="fecha"
+                class="form-control form-control-sm w-25"
+                type="date"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <br />
+            <input required id="nombre"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Nombres"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="ap"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Apellido Paterno"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="am"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Apellido Materno"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <h5 class="card-title mt-3">Fecha De Nacimiento:</h5>
+            <div class="input-group">
+              <input required id="dia"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Dia"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="mes"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Mes"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="año"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Año"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <br />
+            <input required id="lugarnacimiento"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Lugar Nacimiento"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="curp"
+                class="form-control form-control-sm w-50"
+                type="text"
+                placeholder="Curp"
+                aria-label=".form-control-sm example"
+              />
+              <select required id="sexo"
+                class="form-select form-select-sm w-25"
+                aria-label=".form-select-sm example"
+              >
+                <option selected>Sexo</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+              </select>
+            </div>
+            <input required id="alergia"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Alergia"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="telaspirante"
+                class="form-control form-control-sm w-25"
+                type="tel"
+                placeholder="Telefono Aspirante"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="teltutor"
+                class="form-control form-control-sm w-25"
+                type="tel"
+                placeholder="Telefono Tutor"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <div class="input-group">
+              <input required id="emailaspirante"
+                class="form-control form-control-sm w-25"
+                type="email"
+                placeholder="Email Aspirante"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="emailtutor"
+                class="form-control form-control-sm w-25"
+                type="email"
+                placeholder="Email Tutor"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <h5 class="card-title mt-3">Direccion:</h5>
+            <div class="input-group">
+              <input required id="calle"
+                class="form-control form-control-sm w-50"
+                type="text"
+                placeholder="Calle"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="numero"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Numero"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <input required id="colonia"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Colonia"
+              aria-label=".form-control-sm example"
+            />
+            <input required id="localidad"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Localidad"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="cp"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="C. Postal"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="municipio"
+                class="form-control form-control-sm w-75"
+                type="text"
+                placeholder="Municipio"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <input required id="estado"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Estado"
+              aria-label=".form-control-sm example"
+            /><br />
+            <input required id="nombreescuela"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Nombre De La Escuela"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="cct"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="CCT"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="promedio"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Promedio"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <div class="input-group">
+              <input required id="añoingreso"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Año ingreso"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="añoegreso"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Año egreso"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <h5 class="card-title mt-3">Datos Del Tutor:</h5>
+            <input required id="nombret"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Nombres"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="apt"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Apellido Paterno"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="amt"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Apellido Materno"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <div class="input-group">
+              <input required id="curpt"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Curp"
+                aria-label=".form-control-sm example"
+              />
+              <select required id="ultimogrado"
+                class="form-select form-select-sm w-50"
+                aria-label=".form-select-sm example"
+              >
+                <option selected>Ultimo Grado De Estudios</option>
+                <option value="Primaria">Primaria</option>
+                <option value="Secundaria">Secundaria</option>
+                <option value="Preparatoria">Preparatoria</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="submit" class="btn btn-success" data-bs-dismiss="modal" onclick="imprimir()">Imprimir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <center>
+      <table>
+        <tr>
+          <td>
+            <img
+              src="img/logoGOB.png"
+              width="200px"
+            />
+          </td>
+          <td>
+            <img src="img/logoCECY.png" width="80px" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center><b>Solicitud de Inscripcion</b></center>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center><font>Ciclo Escolar 2020-2021</font></center>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center>
+              <b>"TODOS LOS CAMPOS SOLICITADOS SON OBLIGATORIOS"</b>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td>Instrucciones:</td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>
+                Registra cuidadosamente los datos que se solicitan, estos seran
+                utilizados para conformar tu expediente en la base de datos del
+                control escolar.
+              </li>
+              <li>
+                Escribir con letras mayusculas que sean legibles y con tinta
+                negra.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            No.de folio COMIPEMS: <span id="Sfolio"></span><br>No.de aciertos COMIPEMS:
+            <span id="Saciertos"></span><br>Carrera: <span id="Scarrera"></span><br>Fecha: <span id="Sfecha"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Datos personales del aspirante:</b></td>
+        </tr>
+        <tr>
+          <td>Nombre: <span id="Snombre"></span><span id="Sap"></span><span id="Sam"</span></td>
+        </tr>
+        <tr>
+          <td>Fecha de nacimiento: <span id="Sdia"></span><span id="Smes"></span><span id="Saño"></span><br>Lugar de Nacimiento: <span id="Slugarnacimiento"></span></td>
+        </tr>
+        <tr>
+          <td>CURP: <span id="Scurp"></span></td>
+        </tr>
+        <tr>
+          <td>Sexo: <span id="Ssexo"></span><br>Alergia: <span id="Salergia"></span></td>
+        </tr>
+        <tr>
+          <td>Telefono Aspirante: <span id="Stelaspirante"></span><br>Telefono Tutor: <span id="Steltutor"></span></td>
+        </tr>
+        <tr>
+          <td>Email Apsirante: <span id="Semailaspirante"></span><br>Email Tutor: <span id="Semailtutor"></span></td>
+        </tr>
+        <tr>
+          <td><b>Dirección:</b></td>
+        </tr>
+        <tr>
+          <td>Calle: <span id="Scalle"></span><br>Numero:<span id="Snumero"></span><br>Colonia:<span id="Scolonia"</span></td>
+        </tr>
+        <tr>
+          <td>Localidad: <span id="Slocalidad"></span><br>Código Postal:<span id="Scp"></span><br>Municipio<span id="Smunicipio"></span><br>Estado: <span id="Sestado"></span></td>
+        </tr>
+        <tr>
+          <td>Nombre de la escuela: <span id="Snombreescuela"></span></td>
+        </tr>
+        <tr>
+          <td>CCT: <span id="Scct"></span><br>Promedio: <span id="Spromedio"></span><br>Año ingreso: <span id="Sañoingreso"></span><br>Año egreso: <span id="Sañoegreso"></span></td>
+        </tr>
+        <tr>
+          <td>Telefono Aspirante: <span id="Stelaspirante"></span><br>Telefono Tutor: <span id="Steltutor"></span></td>
+        </tr>
+        <tr>
+          <td>Email Apsirante: <span id="Semailaspirante"></span><br>Email Tutor: <span id="Semailtutor"></span></td>
+        </tr>
+      </table>
+    </center>
+    <script src="app.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary m-2"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Insertar
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Formulario</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <input required id="folio"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Folio Comipens"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="aciertos"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Aciertos"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <div class="input-group">
+              <input required id="carrera"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Carrera"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="fecha"
+                class="form-control form-control-sm w-25"
+                type="date"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <br />
+            <input required id="nombre"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Nombres"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="ap"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Apellido Paterno"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="am"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Apellido Materno"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <h5 class="card-title mt-3">Fecha De Nacimiento:</h5>
+            <div class="input-group">
+              <input required id="dia"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Dia"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="mes"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Mes"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="año"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Año"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <br />
+            <input required id="lugarnacimiento"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Lugar Nacimiento"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="curp"
+                class="form-control form-control-sm w-50"
+                type="text"
+                placeholder="Curp"
+                aria-label=".form-control-sm example"
+              />
+              <select required id="sexo"
+                class="form-select form-select-sm w-25"
+                aria-label=".form-select-sm example"
+              >
+                <option selected>Sexo</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+              </select>
+            </div>
+            <input required id="alergia"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Alergia"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="telaspirante"
+                class="form-control form-control-sm w-25"
+                type="tel"
+                placeholder="Telefono Aspirante"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="teltutor"
+                class="form-control form-control-sm w-25"
+                type="tel"
+                placeholder="Telefono Tutor"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <div class="input-group">
+              <input required id="emailaspirante"
+                class="form-control form-control-sm w-25"
+                type="email"
+                placeholder="Email Aspirante"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="emailtutor"
+                class="form-control form-control-sm w-25"
+                type="email"
+                placeholder="Email Tutor"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <h5 class="card-title mt-3">Direccion:</h5>
+            <div class="input-group">
+              <input required id="calle"
+                class="form-control form-control-sm w-50"
+                type="text"
+                placeholder="Calle"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="numero"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Numero"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <input required id="colonia"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Colonia"
+              aria-label=".form-control-sm example"
+            />
+            <input required id="localidad"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Localidad"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="cp"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="C. Postal"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="municipio"
+                class="form-control form-control-sm w-75"
+                type="text"
+                placeholder="Municipio"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <input required id="estado"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Estado"
+              aria-label=".form-control-sm example"
+            /><br />
+            <input required id="nombreescuela"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Nombre De La Escuela"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="cct"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="CCT"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="promedio"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Promedio"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <div class="input-group">
+              <input required id="añoingreso"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Año ingreso"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="añoegreso"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Año egreso"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <h5 class="card-title mt-3">Datos Del Tutor:</h5>
+            <input required id="nombret"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Nombres"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="apt"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Apellido Paterno"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="amt"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Apellido Materno"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <div class="input-group">
+              <input required id="curpt"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Curp"
+                aria-label=".form-control-sm example"
+              />
+              <select required id="ultimogrado"
+                class="form-select form-select-sm w-50"
+                aria-label=".form-select-sm example"
+              >
+                <option selected>Ultimo Grado De Estudios</option>
+                <option value="Primaria">Primaria</option>
+                <option value="Secundaria">Secundaria</option>
+                <option value="Preparatoria">Preparatoria</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="submit" class="btn btn-success" data-bs-dismiss="modal" onclick="imprimir()">Imprimir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <center>
+      <table>
+        <tr>
+          <td>
+            <img
+              src="img/logoGOB.png"
+              width="200px"
+            />
+          </td>
+          <td>
+            <img src="img/logoCECY.png" width="80px" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center><b>Solicitud de Inscripcion</b></center>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center><font>Ciclo Escolar 2020-2021</font></center>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center>
+              <b>"TODOS LOS CAMPOS SOLICITADOS SON OBLIGATORIOS"</b>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td>Instrucciones:</td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>
+                Registra cuidadosamente los datos que se solicitan, estos seran
+                utilizados para conformar tu expediente en la base de datos del
+                control escolar.
+              </li>
+              <li>
+                Escribir con letras mayusculas que sean legibles y con tinta
+                negra.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            No.de folio COMIPEMS: <span id="Sfolio"></span><br>No.de aciertos COMIPEMS:
+            <span id="Saciertos"></span><br>Carrera: <span id="Scarrera"></span><br>Fecha: <span id="Sfecha"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Datos personales del aspirante:</b></td>
+        </tr>
+        <tr>
+          <td>Nombre: <span id="Snombre"></span><span id="Sap"></span><span id="Sam"</span></td>
+        </tr>
+        <tr>
+          <td>Fecha de nacimiento: <span id="Sdia"></span><span id="Smes"></span><span id="Saño"></span><br>Lugar de Nacimiento: <span id="Slugarnacimiento"></span></td>
+        </tr>
+        <tr>
+          <td>CURP: <span id="Scurp"></span></td>
+        </tr>
+        <tr>
+          <td>Sexo: <span id="Ssexo"></span><br>Alergia: <span id="Salergia"></span></td>
+        </tr>
+        <tr>
+          <td>Telefono Aspirante: <span id="Stelaspirante"></span><br>Telefono Tutor: <span id="Steltutor"></span></td>
+        </tr>
+        <tr>
+          <td>Email Apsirante: <span id="Semailaspirante"></span><br>Email Tutor: <span id="Semailtutor"></span></td>
+        </tr>
+        <tr>
+          <td><b>Dirección:</b></td>
+        </tr>
+        <tr>
+          <td>Calle: <span id="Scalle"></span><br>Numero:<span id="Snumero"></span><br>Colonia:<span id="Scolonia"</span></td>
+        </tr>
+        <tr>
+          <td>Localidad: <span id="Slocalidad"></span><br>Código Postal:<span id="Scp"></span><br>Municipio<span id="Smunicipio"></span><br>Estado: <span id="Sestado"></span></td>
+        </tr>
+        <tr>
+          <td>Nombre de la escuela: <span id="Snombreescuela"></span></td>
+        </tr>
+        <tr>
+          <td>CCT: <span id="Scct"></span><br>Promedio: <span id="Spromedio"></span><br>Año ingreso: <span id="Sañoingreso"></span><br>Año egreso: <span id="Sañoegreso"></span></td>
+        </tr>
+        <tr>
+          <td>Telefono Aspirante: <span id="Stelaspirante"></span><br>Telefono Tutor: <span id="Steltutor"></span></td>
+        </tr>
+        <tr>
+          <td>Email Apsirante: <span id="Semailaspirante"></span><br>Email Tutor: <span id="Semailtutor"></span></td>
+        </tr>
+      </table>
+    </center>
+    <script src="app.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary m-2"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Insertar
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Formulario</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <input required id="folio"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Folio Comipens"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="aciertos"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Aciertos"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <div class="input-group">
+              <input required id="carrera"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Carrera"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="fecha"
+                class="form-control form-control-sm w-25"
+                type="date"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <br />
+            <input required id="nombre"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Nombres"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="ap"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Apellido Paterno"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="am"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Apellido Materno"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <h5 class="card-title mt-3">Fecha De Nacimiento:</h5>
+            <div class="input-group">
+              <input required id="dia"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Dia"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="mes"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Mes"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="año"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Año"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <br />
+            <input required id="lugarnacimiento"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Lugar Nacimiento"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="curp"
+                class="form-control form-control-sm w-50"
+                type="text"
+                placeholder="Curp"
+                aria-label=".form-control-sm example"
+              />
+              <select required id="sexo"
+                class="form-select form-select-sm w-25"
+                aria-label=".form-select-sm example"
+              >
+                <option selected>Sexo</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+              </select>
+            </div>
+            <input required id="alergia"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Alergia"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="telaspirante"
+                class="form-control form-control-sm w-25"
+                type="tel"
+                placeholder="Telefono Aspirante"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="teltutor"
+                class="form-control form-control-sm w-25"
+                type="tel"
+                placeholder="Telefono Tutor"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <div class="input-group">
+              <input required id="emailaspirante"
+                class="form-control form-control-sm w-25"
+                type="email"
+                placeholder="Email Aspirante"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="emailtutor"
+                class="form-control form-control-sm w-25"
+                type="email"
+                placeholder="Email Tutor"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <h5 class="card-title mt-3">Direccion:</h5>
+            <div class="input-group">
+              <input required id="calle"
+                class="form-control form-control-sm w-50"
+                type="text"
+                placeholder="Calle"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="numero"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Numero"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <input required id="colonia"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Colonia"
+              aria-label=".form-control-sm example"
+            />
+            <input required id="localidad"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Localidad"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="cp"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="C. Postal"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="municipio"
+                class="form-control form-control-sm w-75"
+                type="text"
+                placeholder="Municipio"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <input required id="estado"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Estado"
+              aria-label=".form-control-sm example"
+            /><br />
+            <input required id="nombreescuela"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Nombre De La Escuela"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="cct"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="CCT"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="promedio"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Promedio"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <div class="input-group">
+              <input required id="añoingreso"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Año ingreso"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="añoegreso"
+                class="form-control form-control-sm w-25"
+                type="number"
+                placeholder="Año egreso"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <h5 class="card-title mt-3">Datos Del Tutor:</h5>
+            <input required id="nombret"
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Nombres"
+              aria-label=".form-control-sm example"
+            />
+            <div class="input-group">
+              <input required id="apt"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Apellido Paterno"
+                aria-label=".form-control-sm example"
+              />
+              <input required id="amt"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Apellido Materno"
+                aria-label=".form-control-sm example"
+              />
+            </div>
+            <div class="input-group">
+              <input required id="curpt"
+                class="form-control form-control-sm w-25"
+                type="text"
+                placeholder="Curp"
+                aria-label=".form-control-sm example"
+              />
+              <select required id="ultimogrado"
+                class="form-select form-select-sm w-50"
+                aria-label=".form-select-sm example"
+              >
+                <option selected>Ultimo Grado De Estudios</option>
+                <option value="Primaria">Primaria</option>
+                <option value="Secundaria">Secundaria</option>
+                <option value="Preparatoria">Preparatoria</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="submit" class="btn btn-success" data-bs-dismiss="modal" onclick="imprimir()">Imprimir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <center>
+      <table>
+        <tr>
+          <td>
+            <img
+              src="img/logoGOB.png"
+              width="200px"
+            />
+          </td>
+          <td>
+            <img src="img/logoCECY.png" width="80px" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center><b>Solicitud de Inscripcion</b></center>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center><font>Ciclo Escolar 2020-2021</font></center>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center>
+              <b>"TODOS LOS CAMPOS SOLICITADOS SON OBLIGATORIOS"</b>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td>Instrucciones:</td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>
+                Registra cuidadosamente los datos que se solicitan, estos seran
+                utilizados para conformar tu expediente en la base de datos del
+                control escolar.
+              </li>
+              <li>
+                Escribir con letras mayusculas que sean legibles y con tinta
+                negra.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            No.de folio COMIPEMS: <span id="Sfolio"></span><br>No.de aciertos COMIPEMS:
+            <span id="Saciertos"></span><br>Carrera: <span id="Scarrera"></span><br>Fecha: <span id="Sfecha"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Datos personales del aspirante:</b></td>
+        </tr>
+        <tr>
+          <td>Nombre: <span id="Snombre"></span><span id="Sap"></span><span id="Sam"</span></td>
+        </tr>
+        <tr>
+          <td>Fecha de nacimiento: <span id="Sdia"></span><span id="Smes"></span><span id="Saño"></span><br>Lugar de Nacimiento: <span id="Slugarnacimiento"></span></td>
+        </tr>
+        <tr>
+          <td>CURP: <span id="Scurp"></span></td>
+        </tr>
+        <tr>
+          <td>Sexo: <span id="Ssexo"></span><br>Alergia: <span id="Salergia"></span></td>
+        </tr>
+        <tr>
+          <td>Telefono Aspirante: <span id="Stelaspirante"></span><br>Telefono Tutor: <span id="Steltutor"></span></td>
+        </tr>
+        <tr>
+          <td>Email Apsirante: <span id="Semailaspirante"></span><br>Email Tutor: <span id="Semailtutor"></span></td>
+        </tr>
+        <tr>
+          <td><b>Dirección:</b></td>
+        </tr>
+        <tr>
+          <td>Calle: <span id="Scalle"></span><br>Numero:<span id="Snumero"></span><br>Colonia:<span id="Scolonia"</span></td>
+        </tr>
+        <tr>
+          <td>Localidad: <span id="Slocalidad"></span><br>Código Postal:<span id="Scp"></span><br>Municipio<span id="Smunicipio"></span><br>Estado: <span id="Sestado"></span></td>
+        </tr>
+        <tr>
+          <td>Nombre de la escuela: <span id="Snombreescuela"></span></td>
+        </tr>
+        <tr>
+          <td>CCT: <span id="Scct"></span><br>Promedio: <span id="Spromedio"></span><br>Año ingreso: <span id="Sañoingreso"></span><br>Año egreso: <span id="Sañoegreso"></span></td>
+        </tr>
+        <tr>
+          <td>Telefono Aspirante: <span id="Stelaspirante"></span><br>Telefono Tutor: <span id="Steltutor"></span></td>
+        </tr>
+        <tr>
+          <td>Email Apsirante: <span id="Semailaspirante"></span><br>Email Tutor: <span id="Semailtutor"></span></td>
+        </tr>
+      </table>
+    </center>
+    <script src="app.js"></script>
+  </body>
+</html>
